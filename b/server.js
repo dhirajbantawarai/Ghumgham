@@ -1,11 +1,20 @@
+require("./db.js");
+const cors = require("cors");
 const express = require("express");
+
+const userroutes = require("../b/routes/userroutes.js");
+
 const app = express();
-const port = 5000; // Change this line to set a different port number
+app.use(express.json()); //parsing every data into json
+app.use(express.urlencoded({ extended: true }));
+app.use(cors()); //cross origin resource sharing
+app.set("PORT", process.env.PORT || 5000);
 
-app.get("/", (req, res) => {
-  res.send("Hello, World!");
+app.listen(app.get("PORT"), function (err, done) {
+  if (err) {
+    console.log("Server failed to run");
+  } else {
+    console.log("Server running on port - ", app.get("PORT"));
+  }
 });
-
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}/`);
-});
+app.use("/api", userroutes);
