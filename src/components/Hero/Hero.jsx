@@ -53,7 +53,7 @@ const Hero = () => {
                     <p className="font-bold text-xl">${priceValue}</p>
                   </div>
                 </label>
-                <div className="bg-gray-100 rounded-full p-2 flex items-center justify-center">
+                <div className="bg-gray-100 rounded-full p-3 flex items-center justify-center">
                   <input
                     type="range"
                     name="destination"
