@@ -5,6 +5,9 @@ import Places from "../components/Places/Places";
 import MainVid from "../assets/video/main.mp4";
 import BannerImg from "../components/BannerImg/BannerImg.jsx";
 import Poster from "../assets/cover-women.jpg";
+import Blogs from "../components/Blogs/BlogsComp.jsx";
+import Banner from "../components/Banner/Banner.jsx";
+import Banner2 from "../assets/travel-cover2.jpg";
 // import BannerImg from "../assets/travel-cover2.jpg";
 
 const Home = () => {
@@ -24,6 +27,9 @@ const Home = () => {
         </div>
         <Places />
         <BannerImg img={Poster} />
+        <Blogs />
+        <Banner />
+        <BannerImg img={Banner2} />
       </div>
     </>
   );
