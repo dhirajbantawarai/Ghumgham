@@ -7,7 +7,7 @@ const TestimonialData = [
         id: 1,
         name: "John Doe",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit",
-        img: "https://fastly.picsum.photos/id/381/101/101.jpg",
+        img: "https://picsum.photos/id/381/101/101.jpg",
     },
     {
         id: 2,
@@ -72,11 +72,11 @@ const Testimonial = () => {
             <div className='container'>
                 {/* header section  */}
                 <div className='text-center mb-20 max-2-[400px] mx-auto '>
-                    <p className='text-sm bg-clip-text text-transparent
+                    <p className='text-2xl bg-clip-text text-transparent
                     bg-gradient-to-r from-primary to-secondary'>
                         Testimonial</p>
                     <h1 className='text-3xl font-bold'>What Our Client Say</h1>
-                    <p className='text-xs text-gray-400'>
+                    <p className='text-sm text-gray-400'>
                         {""}
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
