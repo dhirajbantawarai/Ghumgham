@@ -20,7 +20,7 @@ export const NavbarLinks = [
   },
   {
     name: "Best Places",
-    link: "/best-places",
+    link: "/places",
   },
 ];
 

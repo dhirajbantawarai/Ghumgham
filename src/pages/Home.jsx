@@ -8,9 +8,9 @@ import Poster from "../assets/cover-women.jpg";
 import Blogs from "../components/Blogs/BlogsComp.jsx";
 import Banner from "../components/Banner/Banner.jsx";
 import Banner2 from "../assets/travel-cover2.jpg";
-import Testimonial from "../components/Testimonial/Testimonial.jsx";
+// import Testimonial from "../components/Testimonial/Testimonial.jsx";
 // import BannerImg from "../assets/travel-cover2.jpg";
-
+import Footer from "../components/Footer/Footer.jsx"
 const Home = () => {
   return (
     <>
@@ -31,7 +31,8 @@ const Home = () => {
         <Blogs />
         <Banner />
         <BannerImg img={Banner2} />
-        <Testimonial />
+        {/* <Testimonial /> */}
+
       </div>
     </>
   );
