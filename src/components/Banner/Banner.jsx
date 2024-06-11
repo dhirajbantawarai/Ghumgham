@@ -25,7 +25,7 @@ const Banner = () => {
                         <div>
                             <h1 data-aos="fade-up"
                                 className='text-3xl font-bold sm:text-4xl'>
-                                Explore Nepal With Us!!
+                                Explore The World With Us!!
                             </h1>
                             <p data-aos="fade-up" className='text-sm text-gray-500 
                             tracking-wide leading-8'>
