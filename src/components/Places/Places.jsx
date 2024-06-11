@@ -10,54 +10,54 @@ import Img6 from "../../assets/places/place6.jpg";
 const PlacesData = [
   {
     img: Img1,
-    title: "Boat Tour",
-    location: "USA",
+    title: "Fewatal",
+    location: "Nepal",
     description: "lorem ipsusa asfasf",
     price: 100,
-    typ: "cultural relax",
+    type: "Relax",
   },
   {
     img: Img2,
-    title: "Taj mahal",
+    title: "Taj Mahal",
     location: "India",
     description: "lorem ipsusa asfasf",
     price: 100,
-    typ: "cultural relax",
+    type: "Cultural Relax",
   },
   {
     img: Img3,
-    title: "Underwater",
-    location: "USA",
+    title: "Maldives",
+    location: "Maldives",
     description: "lorem ipsusa asfasf",
     price: 100,
-    typ: "cultural relax",
+    type: "Vacation Relax",
   },
   {
     img: Img4,
-    title: "Boat Tour",
-    location: "USA",
+    title: "Opera House",
+    location: "Australia",
     description: "lorem ipsusa asfasf",
     price: 100,
-    typ: "cultural relax",
+    type: "Chill",
   },
   {
     img: Img5,
-    title: "Boat Tour",
+    title: "Bay Area",
     location: "USA",
     description: "lorem ipsusa asfasf",
     price: 100,
-    typ: "cultural relax",
+    type: "Relax Chill",
   },
   {
     img: Img6,
-    title: "Boat Tour",
+    title: "San Francisco",
     location: "USA",
     description: "lorem ipsusa asfasf",
     price: 100,
-    typ: "cultural relax",
+    type: "Great View",
   },
 ];
-const Places = () => {
+const Places = ({ handleOrderPopup }) => {
   return (
     <div className="bg-gray-50 py-10">
       <div className="container ">
@@ -66,7 +66,12 @@ const Places = () => {
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {PlacesData.map((item, index) => (
-            <PlacesCard key={index} {...item} />
+            <PlacesCard
+
+              handleOrderPopup=
+              {handleOrderPopup}
+
+              key={index} {...item} />
           ))}
         </div>
       </div>

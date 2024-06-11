@@ -1,5 +1,4 @@
 import React from "react";
-
 import Hero from "../components/Hero/Hero";
 import Places from "../components/Places/Places";
 import MainVid from "../assets/video/main.mp4";
@@ -9,9 +8,15 @@ import Blogs from "../components/Blogs/BlogsComp.jsx";
 import Banner from "../components/Banner/Banner.jsx";
 import Banner2 from "../assets/travel-cover2.jpg";
 import Testimonial from "../components/Testimonial/Testimonial.jsx";
+import Popup from "../components/Popup/Popup.jsx"
 // import BannerImg from "../assets/travel-cover2.jpg";
-import Footer from "../components/Footer/Footer.jsx"
+// import Footer from "../components/Footer/Footer.jsx"
 const Home = () => {
+  const [orderPopup, setOrderPopup] = React.useState(false);
+  const handleOrderPopup = () => {
+    setOrderPopup(!orderPopup);
+  };
+
   return (
     <>
       <div>
@@ -26,13 +31,14 @@ const Home = () => {
           </video>
           <Hero />
         </div>
-        <Places />
+        <Places handleOrderPopup={handleOrderPopup} />
         <BannerImg img={Poster} />
         <Blogs />
         <Banner />
         <BannerImg img={Banner2} />
         <Testimonial />
-
+        <Popup orderPopup={orderPopup}
+          setOrderPopup={setOrderPopup} />
       </div>
     </>
   );

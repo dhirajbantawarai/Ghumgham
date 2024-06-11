@@ -30,8 +30,8 @@ const DropdownLinks = [
     link: "/#services",
   },
   {
-    name: "Top Brands",
-    link: "/#mobile_brands",
+    name: "Top kura haru",
+    link: "/#idk",
   },
   {
     name: "Location",
@@ -115,10 +115,10 @@ const Navbar = ({ handleOrderPopup }) => {
             </div>
             <div className="flex items-center gap-4">
               <button
-                className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full"
                 onClick={() => {
                   handleOrderPopup();
                 }}
+                className="bg-gradient-to-r from-primary to-secondary hover:bg-bg-gradient-to-r hover:from-secondary hover:bg-primary transition-all duration-600 text-white px-3 py-1 rounded-full"
               >
                 Book Now
               </button>
@@ -141,7 +141,8 @@ const Navbar = ({ handleOrderPopup }) => {
             </div>
           </div>
         </div>
-        <ResponsiveMenu setShowMenu={setShowMenu} showMenu={showMenu} />
+        <ResponsiveMenu setShowMenu={setShowMenu}
+          showMenu={showMenu} />
       </nav>
     </>
   );
